@@ -1319,6 +1319,7 @@ public class Branch implements BranchViewHandler.IBranchViewEvents, SystemObserv
     }
     
     private boolean reportInitSession(BranchReferralInitListener callback) {
+        Log.d(TAG, "reportInitSession : " + callback);
         if (callback != null) {
             if (isAutoSessionMode_) {
                 // Since Auto session mode initialise the session by itself on starting the first activity, we need to provide user
